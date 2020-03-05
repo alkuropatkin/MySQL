@@ -1,0 +1,26 @@
+SHOW DATABASES;
+
+CREATE DATABASE IF NOT EXISTS vk;
+
+USE vk;
+
+CREATE TABLE users (
+	id INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	first_name VARCHAR(100) NOT NULL,
+	second_name VARCHAR(100) NOT NULL,
+	email VARCHAR(100) NOT NULL UNIQUE,
+	`password` VARCHAR(10),
+	phone VARCHAR(15) NOT NULL UNIQUE,
+#	birthdata DATA,
+	sex CHAR(1) NOT NULL,
+	hometown VARCHAR(100),
+	country VARCHAR(100),
+	photo_id INT UNSIGNED
+);
+
+
+
+
+
+
+)
